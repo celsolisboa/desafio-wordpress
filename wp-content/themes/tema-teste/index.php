@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 	<!-- Conteúdo -->
 	<main id="conteudo" class="position-relative">
+		
 		<!-- Capa -->
     	<section id="capa" class="container-fluid position-relative">
 
     		
-			<!-- Capa -->
+			<!-- Carousel -->
     		<div id="carousel" class="container carousel slide" data-ride="carousel">
 
 	            <ol class="carousel-indicators">
@@ -20,13 +21,13 @@
             	<div class="carousel-inner">
               
             		<div class="carousel-item active">
-            			<img src="<?php bloginfo("template_directory") ?>/img/destaque.jpg" class="img-fluid d-none d-md-block">
-            			<img src="<?php bloginfo("template_directory") ?>/img/destaque1-mobile.jpg?v=2" class="img-fluid d-block d-md-none">
+            			<img src="<?php bloginfo("template_directory") ?>/img/capa1.jpg" class="img-fluid d-none d-md-block">
+            			<img src="<?php bloginfo("template_directory") ?>/img/capa1-mobile.jpg" class="img-fluid d-block d-md-none">
               		</div>
 
               		<div class="carousel-item">
-                		<img src="<?php bloginfo("template_directory") ?>/img/destaque2.jpg" class="img-fluid d-none d-md-block">
-                		<img src="<?php bloginfo("template_directory") ?>/img/destaque2-mobile.jpg?v=2" class="img-fluid d-block d-md-none">
+                		<img src="<?php bloginfo("template_directory") ?>/img/capa2.jpg" class="img-fluid d-none d-md-block">
+                		<img src="<?php bloginfo("template_directory") ?>/img/capa2-mobile.jpg" class="img-fluid d-block d-md-none">
               		</div>
 
             	</div>
@@ -46,6 +47,65 @@
 
         	</div>
 
+   		</section>
+
+   		<!-- Destaques -->
+
+   		<section id="destaques" class="container">
+
+   			<div class="card-columns">
+
+			    <article class="card order-0">
+			    	<img class="card-img-top d-none d-md-block" src="<?php bloginfo("template_directory"); ?>/img/destaque1.jpg?v=2">
+			    	<img class="card-img-top d-block d-md-none" src="<?php bloginfo("template_directory"); ?>/img/destaque1-mobile.jpg">
+			    	<a href="#" class="btn-adesao">
+			    		<div class="card-footer">
+			    			Preencha a proposta de adesão
+			    		</div>
+			    	</a>
+			    </article>
+
+			    <article class="card">
+					<img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/destaque2.jpg?v=2">
+				    <div class="card-img-overlay topo-esquerda">
+				    	<h6 class="card-subtitle">Beleza</h6>
+					    <h4 class="card-title">Ruiva Fatal</h4>
+					    <p class="card-text">Que o ruivo é o tom do momento todo mundo sabe.</p>
+					    <a class="btn btn-logo" href="">Saiba mais</a>
+				    </div>
+			    </article>
+
+			    <article class="card">
+					<img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/destaque4.jpg">
+				    <div class="card-img-overlay centro-direita">
+					    <h6 class="card-subtitle">Moda Logo</h6>
+					    <h4 class="card-title">Paixão por Jeans</h4>
+					    <p class="card-text">Versátil, combina com vários estilos diferentes.</p>
+					    <a class="btn btn-logo" href="">Saiba mais</a>
+				    </div>
+			    </article>
+
+			    <article class="card">
+					<img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/destaque3.jpg">
+				    <div class="card-img-overlay baixo-centro">
+					    <h4 class="card-title">Promoção Bob Esponja</h4>
+					    <p class="card-text">Na compra de uma peça Bob Esponja, ganhe um brinde.</p>
+					    <a class="btn btn btn-logo" href="">Continue lendo</a>
+				    </div>
+			    </article>
+
+			    <article class="card">
+					<img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/destaque5.jpg">
+				    <div class="card-img-overlay baixo-centro">
+					    <h6 class="card-subtitle">Beleza</h6>
+					    <h4 class="card-title">Poder Instantâneo</h4>
+					    <p class="card-text">Batom vermelho deixa toda mulher poderosa.</p>
+					    <a class="btn btn btn-logo" href="">Saiba mais</a>
+				    </div>
+			    </article>
+
+			</div>
+   			
    		</section>
 
    	</main>
