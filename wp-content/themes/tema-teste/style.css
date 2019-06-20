@@ -3,3 +3,342 @@ Theme Name: Tema teste de código
 Author: Lucas Martins Barroso
 Description: Tema de teste de código
 */
+
+/**************************************
+Geral
+**************************************/
+body {
+	font-family: 'Maven Pro', sans-serif!important;
+}
+html #wpadminbar {
+	position: fixed;
+}
+
+/**************************************
+Topo
+**************************************/
+
+#header {
+	position: fixed;
+	z-index: 1020;
+	left: 0;
+	right: 0;
+	max-height: 100%;
+}
+
+/**************************************
+Menu secundário
+**************************************/
+#barra-topo {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+#barra-topo.estilo1 {
+	background-color: #f47d31;
+}
+
+#barra-topo.estilo2 {
+	background-color: #d1d3d4;
+}
+
+#barra-topo .navbar {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#barra-topo.estilo1 .navbar {
+	color: #000000;
+}
+
+#barra-topo.estilo2 .navbar {
+	color: #58595b;
+}
+
+#barra-topo .boleto::before {
+    content: url(img/boleto.png);
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+#barra-topo .navbar a {
+	color: #FFFFFF;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#busca {
+	width: 384px;
+	margin-left: 10px;
+	color: #FFFFFF;
+}
+
+#barra-topo.estilo1 #busca {
+	background-color: #c66223;
+	color: #FFFFFF;
+}
+
+#barra-topo.estilo2 #busca {
+	background-color: #949697;
+}
+
+#busca .form-control {
+	background-color: transparent;
+	border: 0;
+	color: #FFFFFF;
+	border-radius: 0;
+	font-size: 12px;
+	padding: 0 10px;
+	height: calc(1.7em + .75rem + 2px);
+	width: 349px;
+	font-weight: 500;
+}
+
+#busca .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox */
+}
+
+#busca .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #FFFFFF;
+}
+
+#busca .form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: #FFFFFF;
+}
+
+.form-control:focus {
+    border: 0!important;
+    box-shadow: none!important;
+}
+
+#busca .btn {
+	color: #FFFFFF;
+	font-size: 12px;
+	border-radius: 0;
+	border-left: 1px solid #FFFFFF;
+	padding: 1px 10px;
+}
+
+/**************************************
+Menu primário
+**************************************/
+#menu1 a {
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: 500;
+}
+
+#menu1 a:hover,
+#menu1 a[aria-expanded="true"] {
+    background-color: #FFFFFF;
+}
+
+#menu1 .dropdown-item {
+    text-transform: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 12px;
+}
+
+#menu1 .dropdown-menu {
+    border-radius: 0;
+    border: 0;
+    padding-top: 12px;
+    margin-top: 0;
+}
+
+#menu-principal .navbar-toggler:focus {
+	outline: 0;
+}
+
+#menu1 .dropdown-toggle::after {
+	display: none;
+}
+
+#menu1 .peca-cartao {
+	display: none;
+}
+
+#menu1 .peca-cartao:hover {
+	background-color: #949697;
+}
+
+/**************************************
+Transições do menu
+**************************************/
+#barra-topo,
+#logo,
+#menu-principal {
+	transition: all .3s;
+}
+
+/**************************************
+Conteúdo
+**************************************/
+#conteudo {
+	top: 35px;
+}
+
+/**************************************
+Capa
+**************************************/
+#capa {
+	background-color: #d1d3d4;
+	padding: 0;
+}
+
+#carousel {
+	padding: 0;
+	max-width: 1920px;
+}
+
+#carousel .carousel-control-next,
+#carousel .carousel-control-prev {
+	width: 8%;
+}
+
+#controles-carousel {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.carousel-indicators li {
+	width: 8px;
+	height: 8px;
+	background-color: transparent;
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+	opacity: 1;
+}
+.carousel-indicators .active {
+	background-color: #FFFFFF;
+}
+.carousel-control-next-icon {
+    background-image: url(img/seta-next.png);
+}
+.carousel-control-prev-icon {
+    background-image: url(img/seta-prev.png);
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	width: 22px;
+	height: 32px;
+}
+.carousel-control-next, .carousel-control-prev {
+	opacity: 1;
+}
+
+
+/**************************************
+Media queries
+**************************************/
+
+/* Menu lg - imagens e botão "peça cartão" */
+@media (min-width: 992px) {
+	#menu1 .peca-cartao {
+		display: flex;
+		position: absolute;
+		right: 0;
+		bottom: -30px;
+		width: 61px!important;
+		height: 61px;
+		border-radius: 50%;
+		background-color: #58595b;
+		text-align: center;
+		text-transform: uppercase;
+		font-style: oblique;
+		font-weight: 500;
+		white-space: inherit;
+		color: #FFFFFF;
+		font-size: 10px;
+		align-items: center;
+		padding: 0;
+	}
+	#menu1 .masculino .peca-cartao {
+		right: 20px;
+	}
+	#menu1 .feminino .dropdown-menu .dropdown-item,
+	#menu1 .masculino .dropdown-menu .dropdown-item,
+	#menu1 .kids .dropdown-menu .dropdown-item {
+	  width: -moz-max-content;
+	  width: -webkit-max-content;
+	  width: max-content;
+	}
+	#menu1 .feminino .dropdown-menu,
+	#menu1 .masculino .dropdown-menu,
+	#menu1 .kids .dropdown-menu {
+		width: 290px;
+		height: 170px;	
+	}
+	#menu1 .feminino .dropdown-menu {
+	    background: url(img/menu-feminino.jpg) no-repeat top right #FFFFFF;
+	    background-size: 151px 170px;
+	}
+	#menu1 .masculino .dropdown-menu {
+	    background: url(img/menu-masculino.jpg) no-repeat top right #FFFFFF;
+	    background-size: 151px 170px;
+	}
+	#menu1 .kids .dropdown-menu {
+	    background: url(img/menu-kids.jpg) no-repeat top right #FFFFFF;
+	    background-size: 198px 170px;
+	}
+}
+
+/* Ajuste do container para +xl */
+@media (min-width: 1306px) {
+	.container {
+	    max-width: 1276px;
+	}
+}
+
+/* Menu primário sm e md */
+@media (max-width: 991.98px) {
+	#menu1 {
+		margin-top: 20px;
+	}
+	#menu1 a {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#menu1 .dropdown-menu {
+	    padding-bottom: 16px;
+	}
+	#menu1 .dropdown-item {
+    	padding-left: 10px;
+	}
+	#header {
+		overflow-y: auto;
+	}
+}
+
+/* Em telas sm, md e lg: 1) menu secundário desaparece e 2) estilo2 prevalece no menu primário */
+@media (max-width: 1182px) {
+	#barra-topo {
+		display: none;
+	}
+	#logo {
+		width: 125px;
+	}
+	#menu-principal {
+		background-color: #FFFFFF;
+	}
+	#conteudo {
+    	top: 64px;
+	}
+}
+
+/* Em telas sm e md: 1) logo diminui e 2) posição do conteúdo é ajustada em relação ao menu */
+@media (max-width: 767.98px) {
+	#logo {
+		width: 80px!important;
+	}
+	#conteudo {
+    	top: 56px;
+	}
+}
