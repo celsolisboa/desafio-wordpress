@@ -56,7 +56,7 @@
    			<div class="card-columns">
 
 			    <article class="card order-0">
-			    	<img class="card-img-top d-none d-md-block" src="<?php bloginfo("template_directory"); ?>/img/destaque1.jpg?v=2">
+			    	<img class="card-img-top d-none d-md-block" src="<?php bloginfo("template_directory"); ?>/img/destaque1.jpg">
 			    	<img class="card-img-top d-block d-md-none" src="<?php bloginfo("template_directory"); ?>/img/destaque1-mobile.jpg">
 			    	<a href="#" class="btn-adesao">
 			    		<div class="card-footer">
@@ -66,7 +66,7 @@
 			    </article>
 
 			    <article class="card">
-					<img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/destaque2.jpg?v=2">
+					<img class="card-img" src="<?php bloginfo("template_directory"); ?>/img/destaque2.jpg">
 				    <div class="card-img-overlay topo-esquerda">
 				    	<h6 class="card-subtitle">Beleza</h6>
 					    <h4 class="card-title">Ruiva Fatal</h4>
@@ -105,6 +105,31 @@
 			    </article>
 
 			</div>
+   			
+   		</section>
+
+   		<!-- Mapa -->
+   		<section id="mapa" class="container-fluid">
+
+	    <div id="floating-panel" class="row">
+		    <div class="col-md-5">
+		    	<div id="localizacao-atual" class="btn btn-logo">Achar minha localização automaticamente</div>
+		    </div>
+		    <div class="col-md-1 ou">
+		    	<span>Ou</span>
+		    </div>
+		    <div class="col-md-6">
+		    	<h6 class="title">Digite o CEP de onde você está</h6>
+		    	<div class="input-group">
+		    		<input id="address" type="text" placeholder="CEP" class="form-control">
+		    		<div class="input-group-append">
+		    			<input id="submit" class="btn btn-logo" type="button" value="Procurar">
+		    		</div>
+		    	</div>
+
+		    </div>
+		</div>
+	    <div id="map"></div>
    			
    		</section>
 

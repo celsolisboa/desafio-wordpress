@@ -16,7 +16,7 @@
 
 	<!-- estilos, bootstrap, fontes, etc -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link id="style-css" rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/style.css?v=12">
+	<link id="style-css" rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700|Maven+Pro:400,500,700,900&display=swap" rel="stylesheet">
 	<link href="<?php bloginfo("template_directory"); ?>/font-awesome/css/all.css" rel="stylesheet"> 
 
@@ -71,7 +71,7 @@
 
 		            <!-- Botão menu mobile -->
 		            <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#menu1">
-		                <span class="navbar-toggler-icon d-flex align-items-center justify-content-center">
+		                <span class="navbar-toggler-icon d-flex align-items-center justify-content-end">
 		                	<i class="fas fa-bars"></i>
 		                </span>
 		            </button>

@@ -55,7 +55,7 @@
 					    </ul>
 					</div>
 					<div class="col-md-4 col-lg-3 col-xl-2 sac">
-						<div class="row">
+						<div class="row" style="white-space: nowrap;">
 							<div class="col-12 col-md-6">
 								Sac Loja Logo
 							</div>
@@ -90,7 +90,11 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="<?php bloginfo("template_directory") ?>/js.js?v=9"></script>
+	<script type="text/javascript" src="<?php bloginfo("template_directory") ?>/jquery-mask.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsGu7Dht6dnji4N4Yf6-RmEiPmaiF1koU&callback=initMap">
+    </script>
+	<script type="text/javascript" src="<?php bloginfo("template_directory") ?>/js.js"></script>
 	<?php wp_footer(); ?>  
 </body>
 
