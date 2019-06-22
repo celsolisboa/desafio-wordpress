@@ -1,0 +1,123 @@
+/**
+* -----------------------------------------------------------------------
+*                                Pre-header
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                            Media Queries Var
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                         Media Queries Var - End
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                            Media Queries Var
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                         Media Queries Var - End
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                              Style Generic
+* -----------------------------------------------------------------------
+*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none !important; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+/**
+* -----------------------------------------------------------------------
+*                            Style Generic End
+* -----------------------------------------------------------------------
+*/
+header .pre-header {
+  background-color: #f47d31;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 992;
+  top: 0;
+  left: 0;
+  right: 0; }
+  header .pre-header a.nav-link,
+  header .pre-header a.nav-link:hover,
+  header .pre-header a.nav-link:visited,
+  header .pre-header a.nav-link:active {
+    color: #ffffff !important; }
+  header .pre-header ul li.nav-item {
+    margin: 0;
+    padding: 0; }
+    header .pre-header ul li.nav-item:nth-child(1) {
+      padding-right: 16px; }
+    header .pre-header ul li.nav-item:nth-child(2) {
+      padding-right: 20px; }
+    header .pre-header ul li.nav-item:nth-child(3) {
+      padding-right: 18px; }
+    header .pre-header ul li.nav-item:last-of-type {
+      padding-right: 19px; }
+  header .pre-header ul li a.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0; }
+    header .pre-header ul li a.nav-link .boleto-icon {
+      padding-right: 10px; }
+  header .pre-header form {
+    width: 383px;
+    height: 35px;
+    background: #c66223; }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      header .pre-header form {
+        width: 240px; } }
+    @media (min-width: 1200px) {
+      header .pre-header form {
+        width: 240px; } }
+    header .pre-header form .buscar {
+      padding-left: 10px;
+      padding-bottom: 4px; }
+      header .pre-header form .buscar input {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        line-height: 17px;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        width: 300px; }
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+          header .pre-header form .buscar input {
+            width: 100%; } }
+        @media (min-width: 1200px) {
+          header .pre-header form .buscar input {
+            width: 100%; } }
+    header .pre-header form .submit {
+      border-left: 1px solid #fff;
+      padding-left: 6px;
+      width: 35px;
+      height: 26px;
+      padding-top: 0px; }
+      header .pre-header form .submit button {
+        background: none;
+        border: 0 !important;
+        padding: 0;
+        margin: 0;
+        width: 20px; }
