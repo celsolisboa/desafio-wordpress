@@ -81,15 +81,22 @@ header .pre-header {
     header .pre-header ul li a.nav-link .boleto-icon {
       padding-right: 10px; }
   header .pre-header form {
-    width: 383px;
     height: 35px;
     background: #c66223; }
-    @media (min-width: 992px) and (max-width: 1199.98px) {
+    @media (max-width: 575.98px) {
       header .pre-header form {
-        width: 240px; } }
+        width: 100%;
+        margin-right: 0; } }
+    @media (min-width: 576px) and (max-width: 1199.98px) {
+      header .pre-header form {
+        width: 100%;
+        margin-right: 0; } }
+    @media (min-width: 992px) and (max-width: 1300px) {
+      header .pre-header form {
+        width: 240px !important; } }
     @media (min-width: 1200px) {
       header .pre-header form {
-        width: 240px; } }
+        width: 383px; } }
     header .pre-header form .buscar {
       padding-left: 10px;
       padding-bottom: 4px; }
@@ -101,14 +108,19 @@ header .pre-header {
         margin: 0;
         padding: 0;
         border: 0;
-        background: transparent;
-        width: 300px; }
-        @media (min-width: 992px) and (max-width: 1199.98px) {
+        background: transparent; }
+        @media (max-width: 575.98px) {
           header .pre-header form .buscar input {
             width: 100%; } }
+        @media (min-width: 576px) and (max-width: 1199.98px) {
+          header .pre-header form .buscar input {
+            width: 100%; } }
+        @media (min-width: 992px) and (max-width: 1300px) {
+          header .pre-header form .buscar input {
+            width: 150px !important; } }
         @media (min-width: 1200px) {
           header .pre-header form .buscar input {
-            width: 100%; } }
+            width: 300px; } }
     header .pre-header form .submit {
       border-left: 1px solid #fff;
       padding-left: 6px;
