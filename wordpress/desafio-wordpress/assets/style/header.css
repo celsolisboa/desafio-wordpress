@@ -1,0 +1,125 @@
+/**
+* -----------------------------------------------------------------------
+*                                  Header
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                            Media Queries Var
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                         Media Queries Var - End
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                            Media Queries Var
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                         Media Queries Var - End
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                              Style Generic
+* -----------------------------------------------------------------------
+*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none !important; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+/**
+* -----------------------------------------------------------------------
+*                            Style Generic End
+* -----------------------------------------------------------------------
+*/
+header .owl-hero {
+  overflow: hidden; }
+  @media (max-width: 575.98px) {
+    header .owl-hero {
+      height: auto; } }
+  @media (min-width: 576px) and (max-width: 1199.98px) {
+    header .owl-hero {
+      height: auto; } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    header .owl-hero {
+      height: 600px;
+      margin-bottom: 20px; } }
+  @media (min-width: 1200px) {
+    header .owl-hero {
+      height: 729px; } }
+  header .owl-hero .owl-prev {
+    position: absolute;
+    left: 309px;
+    bottom: 246px;
+    width: 20px;
+    height: 28px;
+    background-image: url(../img/header/arrow-left.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    z-index: 993; }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      header .owl-hero .owl-prev {
+        left: 80px; } }
+    header .owl-hero .owl-prev span {
+      display: none; }
+  header .owl-hero .owl-next {
+    position: absolute;
+    right: 309px;
+    bottom: 246px;
+    width: 20px;
+    height: 28px;
+    background-image: url(../img/header/arrow-right.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    z-index: 993; }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      header .owl-hero .owl-next {
+        right: 80px; } }
+    header .owl-hero .owl-next span {
+      display: none; }
+  header .owl-hero .owl-dots {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0; }
+    header .owl-hero .owl-dots .owl-dot.active span {
+      background: #fff; }
+
+header .pre-hero {
+  position: relative;
+  z-index: 991; }
+  header .pre-hero .pos-hero {
+    position: absolute;
+    z-index: 992;
+    top: 35px;
+    left: 0;
+    right: 0; }
+    header .pre-hero .pos-hero .logo {
+      padding-top: 28px; }
+    header .pre-hero .pos-hero .menu-box {
+      padding-top: 38px;
+      padding-right: 16px; }
+      header .pre-hero .pos-hero .menu-box .menu li {
+        padding-right: 37px; }
+        header .pre-hero .pos-hero .menu-box .menu li:last-of-type {
+          padding-right: 0; }
+      header .pre-hero .pos-hero .menu-box .menu li a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        line-height: 17px;
+        color: #333132;
+        margin: 0;
+        padding: 0; }
