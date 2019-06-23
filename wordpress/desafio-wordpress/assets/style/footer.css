@@ -1,0 +1,157 @@
+/**
+* -----------------------------------------------------------------------
+*                                  Footer
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                            Media Queries Var
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                         Media Queries Var - End
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                            Media Queries Var
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                         Media Queries Var - End
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                              Style Generic
+* -----------------------------------------------------------------------
+*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none !important; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+/**
+* -----------------------------------------------------------------------
+*                            Style Generic End
+* -----------------------------------------------------------------------
+*/
+footer {
+  background-color: #f47d31;
+  height: 323px; }
+  @media (max-width: 575.98px) {
+    footer {
+      height: auto; } }
+  @media (min-width: 576px) and (max-width: 1199.98px) {
+    footer {
+      height: auto; } }
+  @media (min-width: 1200px) {
+    footer {
+      height: 323px; } }
+  footer .footer-menu {
+    padding-top: 60px; }
+    @media (max-width: 575.98px) {
+      footer .footer-menu {
+        padding-right: 15px;
+        padding-left: 15px; } }
+    @media (min-width: 576px) and (max-width: 1199.98px) {
+      footer .footer-menu {
+        padding-right: 15px;
+        padding-left: 15px; } }
+    @media (min-width: 1200px) {
+      footer .footer-menu {
+        padding-left: 0;
+        padding-right: 0; } }
+  footer ul {
+    padding-top: 17px;
+    list-style-type: disc;
+    list-style-position: inside; }
+    footer ul li {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      line-height: 12px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 12px; }
+      footer ul li a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        line-height: 12px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: -7px; }
+  footer h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    margin: 0;
+    padding: 0; }
+  @media (max-width: 575.98px) {
+    footer .logo-store {
+      padding-right: 0; } }
+  @media (min-width: 576px) and (max-width: 1199.98px) {
+    footer .logo-store {
+      padding-right: 0; } }
+  @media (min-width: 1200px) {
+    footer .logo-store {
+      padding-right: 94px; } }
+  @media (max-width: 575.98px) {
+    footer .list-shortcut {
+      padding-right: 0; } }
+  @media (min-width: 576px) and (max-width: 1199.98px) {
+    footer .list-shortcut {
+      padding-right: 0; } }
+  @media (min-width: 1200px) {
+    footer .list-shortcut {
+      padding-right: 68px; } }
+  footer .sac h2 {
+    position: relative; }
+  footer .sac .telefone {
+    position: absolute;
+    left: 137px;
+    display: block;
+    width: 87px;
+    bottom: 0; }
+  footer .footer-boleto {
+    padding-top: 18px; }
+  @media (max-width: 575.98px) {
+    footer .footer-dinner {
+      height: auto;
+      overflow: hidden; } }
+  @media (min-width: 576px) and (max-width: 1199.98px) {
+    footer .footer-dinner {
+      height: auto;
+      overflow: hidden; } }
+  @media (min-width: 1200px) {
+    footer .footer-dinner {
+      position: relative;
+      z-index: 991;
+      height: 323px;
+      overflow: hidden; } }
+  @media (min-width: 1200px) {
+    footer .footer-dinner img {
+      position: absolute;
+      top: 0;
+      right: -177px;
+      z-index: 990; } }
+  footer .copyright {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-top: 44px; }

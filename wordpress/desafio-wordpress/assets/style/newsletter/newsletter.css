@@ -1,0 +1,141 @@
+/**
+* -----------------------------------------------------------------------
+*                                Newsletter
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                            Media Queries Var
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                         Media Queries Var - End
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                            Media Queries Var
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                         Media Queries Var - End
+* -----------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------
+*                              Style Generic
+* -----------------------------------------------------------------------
+*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none !important; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+/**
+* -----------------------------------------------------------------------
+*                            Style Generic End
+* -----------------------------------------------------------------------
+*/
+#newsletter .signin,
+#newsletter .share {
+  height: 294px; }
+  @media (max-width: 575.98px) {
+    #newsletter .signin,
+    #newsletter .share {
+      height: 150px; } }
+  @media (min-width: 576px) and (max-width: 1199.98px) {
+    #newsletter .signin,
+    #newsletter .share {
+      height: 150px; } }
+  @media (min-width: 1200px) {
+    #newsletter .signin,
+    #newsletter .share {
+      height: 294px; } }
+
+#newsletter .share-box {
+  padding-left: 11px; }
+
+#newsletter .signin-box {
+  background-color: #d1d3d4;
+  height: 49px; }
+  @media (max-width: 575.98px) {
+    #newsletter .signin-box {
+      width: auto;
+      padding: 0 9px; } }
+  @media (min-width: 576px) and (max-width: 1199.98px) {
+    #newsletter .signin-box {
+      width: auto;
+      padding: 0 9px; } }
+  @media (min-width: 1200px) {
+    #newsletter .signin-box {
+      width: 412px; } }
+
+#newsletter h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px; }
+
+#newsletter .email {
+  padding-left: 9px; }
+  @media (max-width: 575.98px) {
+    #newsletter .email {
+      width: auto;
+      padding-left: 0; } }
+  @media (min-width: 576px) and (max-width: 1199.98px) {
+    #newsletter .email {
+      width: auto;
+      padding-left: 0; } }
+  @media (min-width: 1200px) {
+    #newsletter .email {
+      padding-left: 9px; } }
+  #newsletter .email input {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #58595b;
+    margin: 0;
+    padding: 0;
+    background: #d1d3d4;
+    border: 0; }
+
+#newsletter .submit {
+  padding-left: 68px; }
+  @media (max-width: 575.98px) {
+    #newsletter .submit {
+      padding-left: 0; } }
+  @media (min-width: 576px) and (max-width: 1199.98px) {
+    #newsletter .submit {
+      padding-left: 0; } }
+  @media (min-width: 1200px) {
+    #newsletter .submit {
+      padding-left: 68px; } }
+  #newsletter .submit input[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    color: #58595b;
+    margin: 0;
+    padding: 0;
+    padding: 7px 17px !important;
+    border: 1px solid #58595b;
+    background-color: #fff; }
+
+#newsletter .share-icons {
+  width: 235px; }
+
+#newsletter .share-icons ul li {
+  padding-right: 20px; }
