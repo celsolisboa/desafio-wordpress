@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23-Jun-2019 às 19:47
+-- Tempo de geração: 23-Jun-2019 às 20:28
 -- Versão do servidor: 10.3.15-MariaDB
 -- versão do PHP: 7.3.6
 
@@ -208,7 +208,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (100, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (101, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (102, 'sidebars_widgets', 'a:2:{s:19:\"wp_inactive_widgets\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}', 'yes'),
-(103, 'cron', 'a:6:{i:1561312686;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1561327085;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1561327086;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1561327101;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1561327103;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(103, 'cron', 'a:6:{i:1561316286;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1561327085;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1561327086;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1561327101;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1561327103;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 (104, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (105, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -574,7 +574,20 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (336, 95, '_menu_item_target', ''),
 (337, 95, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
 (338, 95, '_menu_item_xfn', ''),
-(339, 95, '_menu_item_url', '');
+(339, 95, '_menu_item_url', ''),
+(341, 96, '_edit_last', '1'),
+(342, 96, '_edit_lock', '1561314086:1'),
+(343, 97, '_wp_attached_file', '2019/06/banner-1-test.jpg'),
+(344, 97, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1192;s:4:\"file\";s:25:\"2019/06/banner-1-test.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:25:\"banner-1-test-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:25:\"banner-1-test-300x186.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:186;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:25:\"banner-1-test-768x477.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:477;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:26:\"banner-1-test-1024x636.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:636;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(345, 98, '_wp_attached_file', '2019/06/banner-2-test.jpg'),
+(346, 98, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1378;s:4:\"file\";s:25:\"2019/06/banner-2-test.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:25:\"banner-2-test-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:25:\"banner-2-test-300x215.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:215;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:25:\"banner-2-test-768x551.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:551;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:26:\"banner-2-test-1024x735.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:735;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(347, 96, '_thumbnail_id', '98'),
+(348, 99, '_edit_last', '1'),
+(349, 99, '_edit_lock', '1561314240:1'),
+(350, 99, '_thumbnail_id', '97'),
+(351, 99, '_wp_old_slug', 'banner-2'),
+(352, 96, '_wp_old_slug', 'banner-1'),
+(353, 99, '_wp_old_slug', 'banner-1-2');
 
 -- --------------------------------------------------------
 
@@ -711,7 +724,11 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (92, 1, '2019-06-23 13:20:13', '2019-06-23 16:20:13', ' ', '', '', 'publish', 'closed', 'closed', '', '92', '', '', '2019-06-23 13:20:13', '2019-06-23 16:20:13', '', 0, 'http://localhost/desafio-wordpress/wordpress/?p=92', 3, 'nav_menu_item', '', 0),
 (93, 1, '2019-06-23 13:20:13', '2019-06-23 16:20:13', ' ', '', '', 'publish', 'closed', 'closed', '', '93', '', '', '2019-06-23 13:20:13', '2019-06-23 16:20:13', '', 0, 'http://localhost/desafio-wordpress/wordpress/?p=93', 4, 'nav_menu_item', '', 0),
 (94, 1, '2019-06-23 13:20:13', '2019-06-23 16:20:13', ' ', '', '', 'publish', 'closed', 'closed', '', '94', '', '', '2019-06-23 13:20:13', '2019-06-23 16:20:13', '', 0, 'http://localhost/desafio-wordpress/wordpress/?p=94', 2, 'nav_menu_item', '', 0),
-(95, 1, '2019-06-23 13:20:13', '2019-06-23 16:20:13', ' ', '', '', 'publish', 'closed', 'closed', '', '95', '', '', '2019-06-23 13:20:13', '2019-06-23 16:20:13', '', 0, 'http://localhost/desafio-wordpress/wordpress/?p=95', 1, 'nav_menu_item', '', 0);
+(95, 1, '2019-06-23 13:20:13', '2019-06-23 16:20:13', ' ', '', '', 'publish', 'closed', 'closed', '', '95', '', '', '2019-06-23 13:20:13', '2019-06-23 16:20:13', '', 0, 'http://localhost/desafio-wordpress/wordpress/?p=95', 1, 'nav_menu_item', '', 0),
+(96, 1, '2019-06-23 15:10:37', '2019-06-23 18:10:37', '', 'Banner 2', '', 'publish', 'closed', 'closed', '', 'banner-2', '', '', '2019-06-23 15:23:49', '2019-06-23 18:23:49', '', 0, 'http://localhost/desafio-wordpress/wordpress/?post_type=banner&#038;p=96', 2, 'banner', '', 0),
+(97, 1, '2019-06-23 15:14:30', '2019-06-23 18:14:30', '', 'banner-1-test', '', 'inherit', 'open', 'closed', '', 'banner-1-test', '', '', '2019-06-23 15:14:30', '2019-06-23 18:14:30', '', 96, 'http://localhost/desafio-wordpress/wordpress/wp-content/uploads/2019/06/banner-1-test.jpg', 0, 'attachment', 'image/jpeg', 0),
+(98, 1, '2019-06-23 15:14:31', '2019-06-23 18:14:31', '', 'banner-2-test', '', 'inherit', 'open', 'closed', '', 'banner-2-test', '', '', '2019-06-23 15:14:31', '2019-06-23 18:14:31', '', 96, 'http://localhost/desafio-wordpress/wordpress/wp-content/uploads/2019/06/banner-2-test.jpg', 0, 'attachment', 'image/jpeg', 0),
+(99, 1, '2019-06-23 15:14:53', '2019-06-23 18:14:53', '', 'Banner 1', '', 'publish', 'closed', 'closed', '', 'banner-1', '', '', '2019-06-23 15:24:00', '2019-06-23 18:24:00', '', 0, 'http://localhost/desafio-wordpress/wordpress/?post_type=banner&#038;p=99', 1, 'banner', '', 0);
 
 -- --------------------------------------------------------
 
@@ -1030,19 +1047,19 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT de tabela `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=200;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=201;
 
 --
 -- AUTO_INCREMENT de tabela `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=341;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=354;
 
 --
 -- AUTO_INCREMENT de tabela `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
 -- AUTO_INCREMENT de tabela `wp_termmeta`

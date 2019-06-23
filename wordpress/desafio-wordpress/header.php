@@ -42,8 +42,15 @@
                 </nav>
 
                 <div class="owl-carousel owl-mobile owl-theme owl-loaded owl-drag">
-                    <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner/banner-1-test.jpg" class="img-fluid " alt="..."></div>
-                    <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner/banner-2-test.jpg" class="img-fluid " alt="..."></div>
+                    <?php
+                    query_posts( 'post_type=banner' );
+                    while ( have_posts() ) :
+                        the_post();
+                        ?>
+                        <div class="item"><img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>" class="img-fluid " alt="..."></div>
+                        <?php
+                    endwhile;
+                    ?>
                 </div>
 
             </div>
@@ -69,8 +76,15 @@
                 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/style/header.css">
 
                 <div class="owl-carousel owl-hero owl-theme owl-loaded owl-drag">
-                    <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner/banner-1-test.jpg" class="img-fluid " alt="..."></div>
-                    <div class="item"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner/banner-2-test.jpg" class="img-fluid " alt="..."></div>
+                    <?php
+                    query_posts( 'post_type=banner' );
+                    while ( have_posts() ) :
+                        the_post();
+                        ?>
+                        <div class="item"><img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>" class="img-fluid " alt="..."></div>
+                        <?php
+                    endwhile;
+                    ?>
                 </div>
                 <div class="container p-0 pos-hero d-none d-sm-none d-md-none d-lg-flex flex-row justify-content-center align-items-center">
                     <div class="logo mr-auto">
