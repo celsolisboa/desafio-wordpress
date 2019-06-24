@@ -47,6 +47,13 @@ Menu secundário
 #barra-topo {
 	font-size: 12px;
 	font-weight: 500;
+	overflow-y: auto;
+}
+
+/* Ajuste para Internet Explorer */
+#barra-topo .navbar-nav, #busca {
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
 }
 
 #barra-topo.estilo1 {
@@ -80,6 +87,7 @@ Menu secundário
 	color: #FFFFFF;
 	padding-left: 10px;
 	padding-right: 10px;
+	white-space: nowrap;
 }
 
 #busca {
@@ -109,6 +117,21 @@ Menu secundário
 	font-weight: 500;
 }
 
+#busca .form-control::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox */
+}
+
+#busca .form-control:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox */
+}
+
+#busca .form-control::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox */
+}
+
 #busca .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #FFFFFF;
   opacity: 1; /* Firefox */
@@ -124,7 +147,8 @@ Menu secundário
 
 .form-control:focus {
     border: 0!important;
-    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+            box-shadow: none!important;
 }
 
 #busca .btn {
@@ -145,6 +169,8 @@ Menu primário
 	padding-left: 20px;
 	padding-right: 20px;
 	font-weight: 500;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
 	transition: .2s;
 }
 
@@ -175,6 +201,22 @@ Menu primário
 	outline: 0;
 }
 
+#menu-principal .navbar-toggler span span::before {
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Font Awesome 5 Free'; font-weight: 900;
+}
+
+#menu-principal .navbar-toggler.collapsed span span::before {
+	content: "\f0c9";
+}
+
+#menu-principal .navbar-toggler span span::before {
+	content: "\f00d";
+}
+
 #menu1 .dropdown-toggle::after {
 	display: none;
 }
@@ -193,6 +235,8 @@ Transições do menu
 #barra-topo,
 #logo,
 #menu-principal {
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
 	transition: all .3s;
 }
 
@@ -212,6 +256,8 @@ Conteúdo
     border-radius: 0;
     border: 1px solid #58595b;
     padding: 5px 19px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
@@ -222,7 +268,8 @@ Conteúdo
 }
 
 .btn-logo:focus {
-	box-shadow: 0 0 0 0.2rem rgba(148, 150, 151, .25);
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(148, 150, 151, .25);
+	        box-shadow: 0 0 0 0.2rem rgba(148, 150, 151, .25);
 }
 
 /**************************************
@@ -292,10 +339,8 @@ Destaques
 
 #destaques .card-columns {
 	-webkit-column-count: 1;
-	-moz-column-count: 1;
 	column-count: 1;
     -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
     column-gap: 20px;
 }
 
@@ -335,6 +380,8 @@ Destaques
     position: absolute;
     bottom: 0;
     width: 100%;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
@@ -439,8 +486,14 @@ Mapa
     height: 125px;
     background-color: #FFFFFF;
     border: 1px solid #d1d3d4;
+   	display: -webkit-box;
+   	display: -ms-flexbox;
    	display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 #floating-panel.baixo {
@@ -459,8 +512,12 @@ Mapa
 }
 
 #floating-panel #localizacao-atual {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #floating-panel #localizacao-atual::before {
@@ -605,8 +662,12 @@ Rodapé
 
 #footer-2 .sac .btn-logo {
     margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     line-height: 12px;
     padding-left: 10px;
 }
@@ -623,8 +684,56 @@ Media queries
 **************************************/
 
 @media (min-width: 992px) {
-	/* Menu lg - imagens e botão "peça cartão" */
+	/* Imagem de fundo do rodapé */
+	#footer-2 .menu-rodape:after {
+	    content: "";
+	    position: absolute;
+	    right: -460px;
+	    background: url(img/fundo-rodape.jpg?v=2) no-repeat;
+	    background-size: 100% 100%;
+	    width: 698px;
+	    height: 323px;
+	    top: 0;
+	    overflow: hidden;
+	}
+}
+
+@media (min-width: 1200px) {
+	/* Fundo do rodapé */
+	#footer-2 .menu-rodape:after {
+	    right: -140px;
+	}
+}
+
+@media (min-width: 1306px) {
+	/* Ajuste do container para +xl */
+	.container {
+	    max-width: 1276px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	/* Tamanho da logo */
+	#logo {
+		width: 125px!important;
+	}
+	/* Padding dos nav-items */
+	#menu1 a {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	/* Posição das setas dos slides */
+	#carousel .carousel-control-next,
+	#carousel .carousel-control-prev {
+	    width: 8%;
+	}
+}
+
+@media (min-width: 768px) {
+	/* Menu md+ - imagens e botão "peça cartão" */
 	#menu1 .peca-cartao a {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		position: absolute;
 		right: 0;
@@ -640,7 +749,9 @@ Media queries
 		white-space: inherit;
 		color: #FFFFFF;
 		font-size: 10px;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		padding: 0;
 	}
 	#menu1 .masculino .peca-cartao a {
@@ -672,93 +783,25 @@ Media queries
 	    background: url(img/menu-kids.jpg) no-repeat top right #FFFFFF;
 	    background-size: 198px 170px;
 	}
-	/* Imagem de fundo do rodapé */
-	#footer-2 .menu-rodape:after {
-	    content: "";
-	    position: absolute;
-	    right: -460px;
-	    background: url(img/fundo-rodape.jpg?v=2) no-repeat;
-	    background-size: 100% 100%;
-	    width: 698px;
-	    height: 323px;
-	    top: 0;
-	    overflow: hidden;
-	}
-}
 
-@media (min-width: 1200px) {
-	#footer-2 .menu-rodape:after {
-	    right: -140px;
-	}
-}
-
-@media (min-width: 1306px) {
-	/* Ajuste do container para +xl */
-	.container {
-	    max-width: 1276px;
-	}
-}
-
-
-
-@media (max-width: 1182px) {
-	/* Menu secundário desaparece e estilo2 prevalece no menu primário */
-	#barra-topo {
-		display: none;
-	}
-	#logo {
-		width: 125px;
-	}
-	#menu-principal {
-		background-color: #FFFFFF;
-	}
-	#conteudo {
-    	top: 64px;
-	}
-}
-
-@media (max-width: 991.98px) {
-	/* Menu primário sm e md */
-	#menu1 {
-		margin-top: 20px;
-	}
-	#menu1 a {
-		padding-left: 0;
-		padding-right: 0;
-	}
-	#menu1 .dropdown-menu {
-	    padding-bottom: 16px;
-	}
-	#menu1 .dropdown-item {
-    	padding-left: 10px;
-	}
-	#header {
-		overflow-y: auto;
-	}
-	/* Posição das setas dos slides */
-	#carousel .carousel-control-next,
-	#carousel .carousel-control-prev {
-	    width: 8%;
-	}
-}
-
-@media (min-width: 768px) {
 	/* Exibe os destaques em três colunas */
 	#destaques .card-columns {
 		-webkit-column-count: 3;
-		-moz-column-count: 3;
 		column-count: 3;
 	}
 
 	/* Configurações do mapa */
-	
 	#floating-panel .ou {
 		height: 70%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
 	#floating-panel .ou span {
-		align-self: center;
+		-ms-flex-item-align: center;
+		    -ms-grid-row-align: center;
+		    align-self: center;
 		padding: 8px 0;
 	}
 
@@ -770,7 +813,9 @@ Media queries
 	    bottom: 0;
 	    left: 50%;
 	    border-left: 1px solid #d1d3d4;
-	    transform: translate(-50%);
+	    -webkit-transform: translate(-50%);
+	        -ms-transform: translate(-50%);
+	            transform: translate(-50%);
 	}
 	/* Rodapé */
 	#footer-2 .sac {
@@ -788,16 +833,38 @@ Media queries
 }
 
 @media (max-width: 767.98px) {
-	/* Logo diminui e posição do conteúdo é ajustada em relação ao menu */
+	/* Logo diminui, fundo do menu é branco, desaparece o padding do conteiner do menu e posição do conteúdo é ajustada em relação ao menu */
 	#logo {
 		width: 80px!important;
 	}
-	#conteudo {
-    	top: 56px;
+	#menu-principal {
+		background-color: #FFFFFF!important;
 	}
 
 	#header .container {
 	    padding: 0;
+	}
+
+	#conteudo {
+	    top: 107px;
+	}
+
+	/* Menu primário sm */
+	#header {
+		overflow-y: auto;
+	}
+	#menu1 {
+		margin-top: 20px;
+	}
+	#menu1 a {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#menu1 .dropdown-menu {
+	    padding-bottom: 16px;
+	}
+	#menu1 .dropdown-item {
+    	padding-left: 10px;
 	}
 
 	/* Posição das setas dos slides */
@@ -806,7 +873,7 @@ Media queries
 	    width: 18%;
 	}
 
-	/* Superbanner fica igual aos demais e o rodapé sai de cima da imagem */
+	/* Superbanner: rodapé sai de cima da imagem */
 	#destaques .card-footer {
 		position: static;
 	}
@@ -826,8 +893,12 @@ Media queries
 	}
 
 	#floating-panel .ou {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 
 	#floating-panel .ou span {

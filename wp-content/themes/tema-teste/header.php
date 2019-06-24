@@ -42,13 +42,13 @@
                     'theme_location'    => 'menu2',
                     'depth'             => 1,
                     'container'         => 'ul',
-                    'menu_class'        => 'navbar-nav ml-auto',
+                    'menu_class'        => 'navbar-nav ml-auto flex-nowrap',
                     'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                     'walker'            => new WP_Bootstrap_Navwalker(),
                     ) );
                     ?>
 		            <!-- Pesquisa -->
-		            <form id="busca" class="form-inline" role="search" method="get">
+		            <form id="busca" class="form-inline flex-nowrap" role="search" method="get">
 		                <input type="text" class="form-control" value="<?php the_search_query(); ?>" placeholder="Busca" name="s" id="s">
 		                <button type="submit" class="btn" id="searchsubmit"><i class="fas fa-search"></i></button>
 		            </form>
@@ -58,7 +58,7 @@
 
 	    <section id="menu-principal" class="container-fluid">
 	    	<div class="container">
-		        <nav class="navbar navbar-expand-lg navbar" style="z-index: 1;">
+		        <nav class="navbar navbar-expand-md navbar" style="z-index: 1;">
 		            <!-- Logo -->
 		            <div class="navbar-brand">
 		            <a href="<?php bloginfo("url"); ?>">
@@ -70,7 +70,7 @@
 		            <!-- Botão menu mobile -->
 		            <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#menu1">
 		                <span class="navbar-toggler-icon d-flex align-items-center justify-content-end">
-		                	<i class="fas fa-bars"></i>
+		                	<span></span>
 		                </span>
 		            </button>
 
