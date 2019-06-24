@@ -70,7 +70,7 @@ Menu secundário
 	color: #58595b;
 }
 
-#barra-topo .boleto::before {
+#barra-topo .boleto a::before {
     content: url(img/boleto.png);
     padding-right: 10px;
     vertical-align: middle;
@@ -179,11 +179,11 @@ Menu primário
 	display: none;
 }
 
-#menu1 .peca-cartao {
+#menu1 .peca-cartao a {
 	display: none;
 }
 
-#menu1 .peca-cartao:hover {
+#menu1 .peca-cartao a:hover {
 	background-color: #949697;
 }
 
@@ -237,6 +237,10 @@ Capa
 #carousel {
 	padding: 0;
 	max-width: 1920px;
+}
+
+.carousel-item {
+    z-index: 1;
 }
 
 #carousel .carousel-control-next,
@@ -562,22 +566,26 @@ Rodapé
 #footer-2 .menu-rodape {
 	position: relative;
 	padding-top: 60px;
-	padding-bottom: 49px;
+	padding-bottom: 38px;
 }
 
-#footer-2 .list-group-item {
+#footer-2 li {
     background-color: transparent;
     border: 0;
     padding: 0px;
-    list-style-type: disc;
-    list-style-position: inside;
+    list-style: none;
     display: list-item;
     border-radius: 0;
     font-size: 14px;
 }
 
-#footer-2 .list-group-item span {
-    margin-left: -8px;
+#footer-2 li a {
+    padding: 1px 0;
+}
+
+#footer-2 li a:before {
+    content: "\2022";
+    margin-right: 6px;
 }
 
 #footer-2 a:hover {
@@ -616,7 +624,7 @@ Media queries
 
 @media (min-width: 992px) {
 	/* Menu lg - imagens e botão "peça cartão" */
-	#menu1 .peca-cartao {
+	#menu1 .peca-cartao a {
 		display: flex;
 		position: absolute;
 		right: 0;
@@ -635,15 +643,16 @@ Media queries
 		align-items: center;
 		padding: 0;
 	}
-	#menu1 .masculino .peca-cartao {
+	#menu1 .masculino .peca-cartao a {
 		right: 20px;
 	}
 	#menu1 .feminino .dropdown-menu .dropdown-item,
 	#menu1 .masculino .dropdown-menu .dropdown-item,
 	#menu1 .kids .dropdown-menu .dropdown-item {
+	  width: 38%;
+	  width: max-content;
 	  width: -moz-max-content;
 	  width: -webkit-max-content;
-	  width: max-content;
 	}
 	#menu1 .feminino .dropdown-menu,
 	#menu1 .masculino .dropdown-menu,

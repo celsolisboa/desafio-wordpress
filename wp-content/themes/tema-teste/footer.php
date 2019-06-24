@@ -33,26 +33,39 @@
 		<section class="container-fluid" id="footer-2">
 
 			<div class="container menu-rodape">
+			<?php
+			//Nomes dos menus
+			$locations = get_nav_menu_locations(); 
+			$menu_footer1 = wp_get_nav_menu_object($locations['footer1']);
+			$menu_footer2 = wp_get_nav_menu_object($locations['footer2']);
+			?>
 
 				<div class="row">
 					<div class="col-md-4 col-lg-3 col-xl-2 lojas-logo">
-						<h6 class="title">Lojas Logo</h6>
-					    <ul class="list-group">
-					        <a href="#"><li class="list-group-item"><span>Sobre</span></li></a>
-					        <a href="#"><li class="list-group-item"><span>Lojas</span></li></a>
-					        <a href="#"><li class="list-group-item"><span>Trabalhe conosco</span></li></a>
-					        <a href="#"><li class="list-group-item"><span>Contato</span></li></a>
-					    </ul>
+						<h6 class="title"><?php echo $menu_footer1->name; ?></h6>
+			            <?php
+	                    wp_nav_menu( array(
+	                    'theme_location'    => 'footer1',
+	                    'depth'             => 1,
+	                    'container'         => 'ul',
+	                    'menu_class'        => 'list-group',
+	                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+	                    'walker'            => new WP_Bootstrap_Navwalker(),
+	                    ) );
+	                    ?>
 					</div>
 					<div class="col-md-4 col-lg-3 col-xl-2 lista-atalhos">
-						<h6 class="title">Lista de atalhos</h6>
-					    <ul class="list-group">
-					        <a href="#"><li class="list-group-item"><span>Portal do Colaborador</span></li></a>
-					        <a href="#"><li class="list-group-item"><span>Promoções</span></li></a>
-					        <a href="#"><li class="list-group-item"><span>Cartão do Cliente</span></li></a>
-					        <a href="#"><li class="list-group-item"><span>Cadastre-se</span></li></a>
-					        <a href="#"><li class="list-group-item"><span>Blog</span></li></a>
-					    </ul>
+						<h6 class="title"><?php echo $menu_footer2->name; ?></h6>
+			            <?php
+	                    wp_nav_menu( array(
+	                    'theme_location'    => 'footer2',
+	                    'depth'             => 1,
+	                    'container'         => 'ul',
+	                    'menu_class'        => 'list-group',
+	                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+	                    'walker'            => new WP_Bootstrap_Navwalker(),
+	                    ) );
+	                    ?>
 					</div>
 					<div class="col-md-4 col-lg-3 col-xl-2 sac">
 						<div class="row" style="white-space: nowrap;">
@@ -90,7 +103,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="<?php bloginfo("template_directory") ?>/jquery-mask.js"></script>
+	<script type="text/javascript" src="<?php bloginfo("template_directory") ?>/ferramentas/jquery-mask.js"></script>
 	<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsGu7Dht6dnji4N4Yf6-RmEiPmaiF1koU&callback=initMap">
     </script>
